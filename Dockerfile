@@ -1,5 +1,5 @@
-# Use ROS2 Humble as the base image
-FROM ros:humble
+# Use ROS2 Foxy as the base image
+FROM ros:foxy
 
 # Set the working directory
 WORKDIR /wall_follower_ws
@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Build the package
-RUN /bin/bash -c '. /opt/ros/humble/setup.bash; \
+RUN /bin/bash -c '. /opt/ros/foxy/setup.bash; \
     colcon build --packages-select wall_follower_f1tenth'
 
 # Set up the entrypoint
