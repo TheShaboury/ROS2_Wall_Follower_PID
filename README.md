@@ -19,6 +19,11 @@ The wall follower controller uses LIDAR data to maintain a constant distance fro
 - AutoDrive simulator
 - Docker (for containerization and submission)
 
+## Docker Image
+
+Here you can find the full image for the final project submission you can follow the instructions on DockerHub and use it right away:
+https://hub.docker.com/r/theshaboury/mms_autonomous
+
 ## Building the Project
 
 1. Clone this repository into your ROS2 workspace:
