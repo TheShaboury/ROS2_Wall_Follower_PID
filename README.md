@@ -31,13 +31,13 @@ https://hub.docker.com/r/theshaboury/mms_autonomous
 
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/yourusername/wall-follower-f1tenth.git
+git clone https://github.com/TheShaboury/ROS2_Wall_Follower_PID
 ```
 2. Build the project:
 
 ```bash
 cd ~/ros2_ws
-colcon build --packages-select wall_follower_f1tenth
+colcon build --packages-select ROS2_Wall_Follower_PID
 ```
 3. Source the setup file:
 
@@ -50,7 +50,7 @@ source ~/ros2_ws/install/setup.bash
 To run the wall follower controller:
 
 ```bash
-ros2 run wall_follower_f1tenth wall_follower_node
+ros2 run ROS2_Wall_Follower_PID wall_follower_node
 ```
 
 ## Docker submission
